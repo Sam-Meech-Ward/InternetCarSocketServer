@@ -22,7 +22,7 @@ app.ws('/', function(ws, req) {
 });
 
 app.post("/forward", (req, res) => {
-  car.send("forward");
+  car().send("forward");
   res.send("🤗");
 });
 
